@@ -16,15 +16,14 @@ const BubblePage = () => {
           setColorList(
               response.data.map(item=>item)
           );
-          // console.log(response)
+          
       })
       .catch(error=>{
-        //   console.log("FRIENDS SOMETHING WRONG")
+        
           console.log(error);
       }) 
   }
-  // console.log("HERE!!!");
-  // console.log(colorList);
+  
   return (
     <>
       <ColorList colors={colorList} updateColors={setColorList} />
